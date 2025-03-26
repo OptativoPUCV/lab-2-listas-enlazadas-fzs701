@@ -43,3 +43,14 @@ Wed, Mar 26, 2025  8:47:03 AM:
  tests:  5|4
 total_score: 25/70
 75d50a8
+Wed, Mar 26, 2025  8:48:41 AM: 
+ list.c | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+list.c: In function 'lastList':
+list.c:60:9: error: implicit declaration of function 'retun' [-Werror=implicit-function-declaration]
+         retun NULL;
+         ^~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+fceaf12
