@@ -54,3 +54,9 @@ list.c:60:9: error: implicit declaration of function 'retun' [-Werror=implicit-f
 cc1.exe: all warnings being treated as errors
 Compilation failed
 fceaf12
+Wed, Mar 26, 2025  8:48:54 AM: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  6|4
+total_score: 25/70
+d0e8aad
