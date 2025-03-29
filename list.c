@@ -139,7 +139,7 @@ void * popCurrent(List * list) {
         list->current->prev = list->current->next;
         list->current->next =list->current->prev;
     }
-    return NULL;
+    return eliminar;
 }
 
 void cleanList(List * list) {
