@@ -473,3 +473,8 @@ list.c:142:11: error: unused variable 'eliminar' [-Werror=unused-variable]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 245a50e
+Sat, Mar 29, 2025 12:14:26 AM: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+d5456db
