@@ -458,3 +458,18 @@ Sat, Mar 29, 2025 12:12:39 AM:
  1 file changed, 2 insertions(+), 2 deletions(-)
  tests:  0|0
 c58cccc
+Sat, Mar 29, 2025 12:14:08 AM: 
+ list.c | 7 +++++--
+ 1 file changed, 5 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+list.c: In function 'popCurrent':
+list.c:144:10: error: 'eleminar' undeclared (first use in this function)
+     free(eleminar);
+          ^~~~~~~~
+list.c:144:10: note: each undeclared identifier is reported only once for each function it appears in
+list.c:142:11: error: unused variable 'eliminar' [-Werror=unused-variable]
+     Node *eliminar = list->current;
+           ^~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+245a50e

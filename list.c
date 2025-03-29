@@ -125,7 +125,7 @@ void * popCurrent(List * list) {
     if(list->head == NULL){
         return NULL;
     }
-    void *eliminar = list->current->data;
+    void *dato = list->current->data;
     if(list->current->prev == NULL){
         list->head = list->current->next;
         if(list->head != NULL){
@@ -139,7 +139,10 @@ void * popCurrent(List * list) {
         list->current->prev->next = list->current->next;
         list->current->next->prev =list->current->prev;
     }
-    return eliminar;
+    Node *eliminar = list->current;
+    list->current = list->current->next;
+    free(eleminar);
+    return dato;
 }
 
 void cleanList(List * list) {
