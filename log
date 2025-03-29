@@ -381,3 +381,23 @@ list.c:128:11: error: unused variable 'eliminar' [-Werror=unused-variable]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 db8ef6b
+Sat, Mar 29, 2025 12:06:07 AM: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+list.c: In function 'popCurrent':
+list.c:126:9: error: 'return' with no value, in function returning non-void [-Werror]
+         return;
+         ^~~~~~
+list.c:124:8: note: declared here
+ void * popCurrent(List * list) {
+        ^~~~~~~~~~
+list.c:128:5: error: unknown type name 'Nodo'
+     Nodo* eliminar = list->current->data;
+     ^~~~
+list.c:128:11: error: unused variable 'eliminar' [-Werror=unused-variable]
+     Nodo* eliminar = list->current->data;
+           ^~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+90d4f2d

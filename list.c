@@ -122,7 +122,7 @@ void * popBack(List * list) {
 }
 
 void * popCurrent(List * list) {
-    if(lista->head == NULL){
+    if(list->head == NULL){
         return;
     }
     Nodo* eliminar = list->current->data;
