@@ -437,3 +437,14 @@ list.c:128:11: error: unused variable 'eliminar' [-Werror=unused-variable]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 101b1db
+Sat, Mar 29, 2025 12:11:44 AM: 
+ list.c | 7 +++++++
+ 1 file changed, 7 insertions(+)
+In file included from test.c:5:0:
+list.c: In function 'popCurrent':
+list.c:128:11: error: unused variable 'eliminar' [-Werror=unused-variable]
+     void *eliminar = list->current->data;
+           ^~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+d7b946e
