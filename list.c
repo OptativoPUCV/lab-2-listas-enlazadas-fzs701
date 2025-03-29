@@ -125,7 +125,7 @@ void * popCurrent(List * list) {
     if(list->head == NULL){
         return NULL;
     }
-    Nodo* eliminar = list->current->data;
+    Node* eliminar = list->current->data;
     if(list->current->prev == NULL){
         list->head = list->current->next;
         if(list->head != NULL){
