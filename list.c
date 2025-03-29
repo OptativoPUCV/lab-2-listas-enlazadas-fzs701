@@ -77,7 +77,7 @@ void pushFront(List * list, void * data) {
     newNodo->next = list->head;
     newNodo->prev = NULL;
     if(list->head == NULL){
-        retunr;
+        return;
     }
     if(list->head != NULL){
         list->head->prev = newNodo;

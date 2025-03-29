@@ -147,3 +147,9 @@ list.c:80:9: error: 'retunr' undeclared (first use in this function)
 list.c:80:9: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 8dd894d
+Fri, Mar 28, 2025 11:39:02 PM: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  9|3
+total_score: 35/70
+2d3bff4
