@@ -123,7 +123,7 @@ void * popBack(List * list) {
 }
 
 void * popCurrent(List * list) {
-    if(list->head == NULL){
+    if(list->current == NULL){
         return NULL;
     }
     void *dato = list->current->data;
