@@ -95,12 +95,12 @@ void pushBack(List * list, void * data) {
 
 void pushCurrent(List * list, void * data) {
     Nodo* newNodo = (Nodo*)malloc(sizeof(Nodo*));
-    newNodo->data = data;
-    newNodo ->prev = NULL;
-    newNodo->next = list->head;
     if(list.>head == NULL){
         return;
     }
+    newNodo->data = data;
+    newNodo ->prev = NULL;
+    newNodo->next = list->head;
     if(list->current->next != NULL){
         list->current->next->prev = newNodo;
     }
