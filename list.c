@@ -76,12 +76,12 @@ void pushFront(List * list, void * data) {
     newNodo->data = data;
     newNodo->next = list->head;
     newNodo->prev = NULL;
-    while(newNodo != NULL){
+    while(list->head != NULL){
         list->head->prev = newNodo;
     }
     list->head = newNodo;
     
-    
+
 }
 
 void pushBack(List * list, void * data) {
